@@ -27,4 +27,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const isLightMode = body.classList.contains('light-mode');
         setTheme(!isLightMode);
     });
+
+    // New navigation button handlers
+    const upperLimbBtn = document.getElementById('upper-limb-btn');
+    const lowerLimbBtn = document.getElementById('lower-limb-btn');
+
+    if (upperLimbBtn) {
+        upperLimbBtn.addEventListener('click', () => {
+            alert('상지 (Upper Limb) 정보 표시 예정');
+            // Future: Load upper limb muscle data
+        });
+    }
+
+    if (lowerLimbBtn) {
+        lowerLimbBtn.addEventListener('click', () => {
+            alert('하지 (Lower Limb) 정보 표시 예정');
+            // Future: Load lower limb muscle data
+        });
+    }
 });
