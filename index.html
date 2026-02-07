@@ -9,15 +9,39 @@
 <body>
     <header>
         <h1>Muscle Anatomy Explorer</h1>
+        <button id="muscle-explorer-btn">Muscle Explorer</button>
+        <button id="flashcard-app-btn">Flashcards</button>
         <button id="theme-toggle">Toggle Theme</button>
     </header>
     <main>
-        <nav class="region-navigation">
-            <button id="upper-limb-btn">상지 (Upper Limb)</button>
-            <button id="lower-limb-btn">하지 (Lower Limb)</button>
-        </nav>
-        <div id="muscle-diagram"></div>
-        <muscle-info></muscle-info>
+        <div id="muscle-explorer-section">
+            <nav class="region-navigation">
+                <button id="upper-limb-btn">상지 (Upper Limb)</button>
+                <button id="lower-limb-btn">하지 (Lower Limb)</button>
+            </nav>
+            <div id="muscle-diagram"></div>
+            <muscle-info></muscle-info>
+        </div>
+
+        <div id="flashcard-app" style="display:none;">
+            <div class="flashcard-container">
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <p id="card-front-text"></p>
+                        </div>
+                        <div class="flashcard-back">
+                            <p id="card-back-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="prev-btn">이전</button>
+                <button id="flip-btn">뒤집기</button>
+                <button id="next-btn">다음</button>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Muscle Anatomy Explorer</p>
