@@ -1,1 +1,76 @@
-/* Add styles here */
+:root {
+    --background-color: #121212;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #b3b3b3;
+    --accent-color: #1db954;
+    --container-background: #282828;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: var(--container-background);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+#muscle-diagram {
+    flex: 2;
+    min-width: 300px;
+    max-width: 600px;
+    height: auto;
+}
+
+muscle-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.muscle-info-container {
+    background-color: var(--container-background);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: var(--accent-color);
+}
+
+p {
+    color: var(--secondary-text-color);
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+path {
+    fill: #888;
+    stroke: #fff;
+    stroke-width: 1px;
+    transition: fill 0.3s ease;
+}
+
+path:hover, path.active {
+    fill: var(--accent-color);
+}
