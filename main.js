@@ -31,16 +31,26 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Section Switching Logic ---
     const muscleExplorerSection = document.getElementById('muscle-explorer-section');
     const flashcardAppSection = document.getElementById('flashcard-app');
+    const regionNavigation = document.querySelector('.region-navigation'); // Get region navigation
 
     const showSection = (sectionToShow) => {
+        // Hide all sections initially
+        regionNavigation.style.display = 'none';
+        muscleExplorerSection.style.display = 'none';
+        flashcardAppSection.style.display = 'none';
+
         if (sectionToShow === 'muscle-explorer') {
             muscleExplorerSection.style.display = 'flex';
-            flashcardAppSection.style.display = 'none';
         } else if (sectionToShow === 'flashcard-app') {
-            muscleExplorerSection.style.display = 'none';
             flashcardAppSection.style.display = 'flex';
+        } else if (sectionToShow === 'regions') {
+            regionNavigation.style.display = 'flex';
         }
     };
+
+    const showRegions = () => {
+        showSection('regions');
+    }
 
     // --- Muscle Anatomy Explorer Handlers (existing) ---
     const upperLimbBtn = document.getElementById('upper-limb-btn');
@@ -89,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const flipBtn = document.getElementById('flip-btn');
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
+    const backToRegionsBtn = document.getElementById('back-to-regions-btn'); // New button
 
     const displayCard = () => {
         if (currentFlashcards.length === 0) {
@@ -152,6 +163,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Initialize with all flashcards or a default category
-    loadFlashcards('all');
+    if (backToRegionsBtn) {
+        backToRegionsBtn.addEventListener('click', () => {
+            showRegions();
+        });
+    }
+
+    // Initialize the view to show region selection
+    showRegions();
 });

@@ -12,11 +12,12 @@
         <button id="theme-toggle">테마 전환</button>
     </header>
     <main>
-        <div id="muscle-explorer-section">
-            <nav class="region-navigation">
-                <button id="upper-limb-btn">상지</button>
-                <button id="lower-limb-btn">하지</button>
-            </nav>
+        <nav class="region-navigation">
+            <button id="upper-limb-btn">상지</button>
+            <button id="lower-limb-btn">하지</button>
+        </nav>
+
+        <div id="muscle-explorer-section" style="display:none;">
             <div id="muscle-diagram"></div>
             <muscle-info></muscle-info>
         </div>
@@ -35,6 +36,7 @@
                 </div>
             </div>
             <div class="controls">
+                <button id="back-to-regions-btn">뒤로가기</button>
                 <button id="prev-btn">이전</button>
                 <button id="flip-btn">뒤집기</button>
                 <button id="next-btn">다음</button>
