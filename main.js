@@ -31,8 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Section Switching Logic ---
     const muscleExplorerSection = document.getElementById('muscle-explorer-section');
     const flashcardAppSection = document.getElementById('flashcard-app');
-    const muscleExplorerBtn = document.getElementById('muscle-explorer-btn');
-    const flashcardAppBtn = document.getElementById('flashcard-app-btn');
 
     const showSection = (sectionToShow) => {
         if (sectionToShow === 'muscle-explorer') {
@@ -43,16 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
             flashcardAppSection.style.display = 'flex';
         }
     };
-
-    if (muscleExplorerBtn) {
-        muscleExplorerBtn.addEventListener('click', () => showSection('muscle-explorer'));
-    }
-    if (flashcardAppBtn) {
-        flashcardAppBtn.addEventListener('click', () => showSection('flashcard-app'));
-    }
-
-    // Initially show the muscle explorer section
-    showSection('muscle-explorer');
 
     // --- Muscle Anatomy Explorer Handlers (existing) ---
     const upperLimbBtn = document.getElementById('upper-limb-btn');
