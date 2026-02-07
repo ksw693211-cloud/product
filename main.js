@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const displayCard = () => {
         if (currentFlashcards.length === 0) {
             cardFrontText.textContent = "No flashcards available for this category.";
-            cardBackText.textContent = "";
+            cardBackText.innerHTML = ""; // Use innerHTML for consistency
             flashcardElement.classList.remove('flipped');
             isFlipped = false;
             // Optionally disable navigation buttons if no cards
@@ -326,7 +326,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const card = currentFlashcards[currentCardIndex];
         cardFrontText.textContent = card.front;
-        cardBackText.textContent = card.back;
+
+        if (card.category === 'lower-limb') {
+            const parts = card.back.split(';').map(part => part.trim()).filter(part => part.length > 0);
+            let formattedBack = '';
+            parts.forEach(part => {
+                const [label, content] = part.split(':', 2); // Split only on first colon
+                if (label && content) {
+                    formattedBack += `<p><strong>${label.trim()}:</strong> ${content.trim()}</p>`;
+                } else if (label) {
+                    formattedBack += `<p>${label.trim()}</p>`; // Fallback for malformed parts
+                }
+            });
+            cardBackText.innerHTML = formattedBack;
+        } else {
+            cardBackText.textContent = card.back;
+        }
+
         flashcardElement.classList.remove('flipped'); // Ensure card is always front-facing when changing
         isFlipped = false;
     };
