@@ -1,3 +1,4 @@
+
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
@@ -30,3 +31,40 @@
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
 [debug] [2026-02-07T08:15:36.215Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
 [debug] [2026-02-07T08:15:36.215Z] > authorizing via signed-in user (ksw693211@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-07T08:59:06.194Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-07T08:59:06.195Z] > authorizing via signed-in user (ksw693211@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-07T08:59:24.677Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-07T08:59:24.678Z] > authorizing via signed-in user (ksw693211@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-07T08:59:24.680Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-07T08:59:24.680Z] > authorizing via signed-in user (ksw693211@gmail.com)
+[debug] [2026-02-07T08:59:24.686Z] No OAuth tokens found
+[debug] [2026-02-07T08:59:24.691Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2026-02-07T08:59:25.245Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-02-07T08:59:25.245Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-07T08:59:30.013Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-07T08:59:30.013Z] > authorizing via signed-in user (ksw693211@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-07T08:59:30.020Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-07T08:59:30.020Z] > authorizing via signed-in user (ksw693211@gmail.com)
+[debug] [2026-02-07T08:59:30.026Z] No OAuth tokens found
+[debug] [2026-02-07T08:59:30.026Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/frist-work-45762508-4b562/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2026-02-07T08:59:30.027Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/frist-work-45762508-4b562/services/cloudresourcemanager.googleapis.com  x-goog-user-project=frist-work-45762508-4b562
+[debug] [2026-02-07T08:59:31.077Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/frist-work-45762508-4b562/services/cloudresourcemanager.googleapis.com 200
+[debug] [2026-02-07T08:59:31.077Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/frist-work-45762508-4b562/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2026-02-07T08:59:31.143Z] No OAuth tokens found
+[debug] [2026-02-07T08:59:31.144Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/frist-work-45762508-4b562 [none]
+[debug] [2026-02-07T08:59:31.964Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/frist-work-45762508-4b562 200
+[debug] [2026-02-07T08:59:31.964Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/frist-work-45762508-4b562 {"projectNumber":"28407245867","projectId":"frist-work-45762508-4b562","lifecycleState":"ACTIVE","name":"Firebase app","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2026-02-07T08:57:31.610146Z"}
+[info] Updating Studio Workspace active project to match Firebase CLI 'frist-work-45762508-4b562'
+[error] Failed to update Firebase Project for Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[info] Now using project frist-work-45762508-4b562
